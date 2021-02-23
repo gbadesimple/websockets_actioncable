@@ -21,11 +21,16 @@ const messageChannel = consumer.subscriptions.create("MessageChannel", {
                 <p> ${data.user.email} </p>
               </div>
               <div class="message-body">
+<<<<<<< HEAD
                 <p> ${data.message.body} </p>
+=======
+                <p> ${data.body} </p>
+>>>>>>> actioncable
               </div>
             </article>`
   }
 });
+<<<<<<< HEAD
 
 document.addEventListener("turbolinks:load", () => {
   let form = document.querySelector('#message-form')
@@ -41,3 +46,5 @@ document.addEventListener("turbolinks:load", () => {
     })
   }
 })
+=======
+>>>>>>> actioncable
